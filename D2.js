@@ -104,9 +104,10 @@ if (totalShoppingCart > freeShippingGoal) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("-Esercizio 7-")
-let a = 111
-let b = 22
-let c = 3
+let number1 = 111
+let number2 = 22
+let number3 = 3
+/*SE POTESSI TRATTARLO COME UN ARRAY
 const arrayOfNumbers = [a, b, c]
 arrayOfNumbers.sort(function (x, y) {
   return x - y
@@ -119,6 +120,18 @@ if (a > b && a > c) {
   console.log(arrayOfNumbers)
 } else if (c > a && c > b) {
   console.log(arrayOfNumbers)
+}
+*/
+if (number1 > number2 && number1 > number3) {
+  if (number2 > number3) console.log(number1, number2, number3)
+  if (number2 < number3) console.log(number1, number3, number2)
+} else if (number1 < number2 && number1 < number3) {
+  if (number2 < number3) console.log(number3, number2, number1)
+  if (number2 > number3) console.log(number2, number3, number1)
+} else if (number1 > number2 && number2 < number3) {
+  console.log(number3, number1, number2)
+} else {
+  console.log(number2, number1, number3)
 }
 
 /* ESERCIZIO 8
@@ -214,4 +227,5 @@ console.log(numbers)
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("-Esercizio 15-")
 newNumber = 100
-Number.splice(-1, 1, newNumber)
+numbers.splice(-1, 1, newNumber)
+console.log(numbers)
