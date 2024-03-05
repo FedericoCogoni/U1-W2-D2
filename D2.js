@@ -214,6 +214,4 @@ console.log(numbers)
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("-Esercizio 15-")
 newNumber = 100
-numbers.pop()
-numbers.push(newNumber)
-console.log(numbers)
+Number.splice(-1, 1, newNumber)
